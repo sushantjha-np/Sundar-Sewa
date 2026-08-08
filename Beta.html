@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== Google Analytics (single loader, both IDs) ===== -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC0KJRPTN7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,11 +11,9 @@
   </script>
 
   <meta charset="UTF-8">
-  <!-- CRITICAL: correct mobile rendering -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- ===== SEO ===== -->
   <title>Sundar Sewa Pvt. Ltd. — Accounting, VAT, Tax & Legal Services in Nepal</title>
   <meta name="description" content="Sundar Sewa Pvt. Ltd. is Kathmandu's trusted partner for all financial & legal solutions in Nepal — accounting, bookkeeping, PAN/VAT registration, tax consultation, audit, company registration, bank loan & legal services. 15+ years of expert experience, 24/7 genuine service.">
   <meta name="keywords" content="Sundar Sewa, accounting services Nepal, tax consultation Kathmandu, VAT registration Nepal, PAN registration, audit services Nepal, company registration Kathmandu, bank loan consultation Nepal">
@@ -26,7 +23,6 @@
   <meta name="google-site-verification" content="ejABw5ouFFrJSgRMry8KHrfP3raN8b71VlSrP3Iv7nU">
   <meta name="theme-color" content="#171310">
 
-  <!-- ===== SOCIAL ===== -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundar Sewa Pvt. Ltd.">
   <meta property="og:title" content="Sundar Sewa Pvt. Ltd. — Accounting, VAT, Tax & Legal Services in Nepal">
@@ -35,14 +31,14 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/sushantjha143/Sundar-Sewa/main/images/SundarSewaWEBLOGO.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- ===== ICONS ===== -->
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/sushantjha143/Sundar-Sewa/main/images/SundarSewaWEBLOGO.png">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/sushantjha143/Sundar-Sewa/main/images/SundarSewaWEBLOGO.png">
   <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sushantjha143/Sundar-Sewa/main/images/SundarSewaWEBLOGO.png">
 
-  <!-- ===== PERFORMANCE ===== -->
   <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
   <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -51,7 +47,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <!-- ===== STRUCTURED DATA ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,7 +68,6 @@
   </script>
 
   <style>
-    /* ========== RESET / TOKENS ========== */
     *{margin:0;padding:0;box-sizing:border-box}
     :root{
       --ink:#1c1400; --dark:#171310; --darker:#14100c;
@@ -85,7 +79,7 @@
     html{overflow-x:hidden;-webkit-text-size-adjust:100%}
     @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
     body{font-family:var(--body);line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden;max-width:100%;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased}
-    body.intro-active,body.menu-locked{overflow:hidden}
+    body.intro-active{overflow:hidden}
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
     ul{list-style:none}
@@ -95,7 +89,6 @@
     .skip-link{position:absolute;left:-9999px;top:0;background:var(--orange);color:#fff;padding:10px 18px;z-index:100000}
     .skip-link:focus{left:0}
 
-    /* ========== BUTTONS ========== */
     .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:50px;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
     .btn i{transition:transform .22s}
     .btn:hover i{transform:translateX(4px)}
@@ -108,7 +101,6 @@
     .btn-dark{background:var(--dark);color:#fff}
     .btn-dark:hover{transform:translateY(-3px)}
 
-    /* ========== TOP BAR (minimal, no location) ========== */
     .top-header{background:var(--darker);color:#e8e2da;padding:7px 0;font-size:.85rem}
     .top-header .container{display:flex;justify-content:space-between;align-items:center;gap:12px}
     .header-contact{display:flex;flex-wrap:wrap;gap:20px}
@@ -118,7 +110,6 @@
     .social-links a{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,255,255,.2);font-size:.75rem;transition:.2s}
     .social-links a:hover{background:var(--orange);border-color:var(--orange);color:#fff}
 
-    /* ========== HEADER ========== */
     header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--line);transition:box-shadow .25s}
     header.scrolled{box-shadow:0 6px 22px rgba(20,12,4,.09)}
     header .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
@@ -130,11 +121,23 @@
     .nav-links a:hover{color:var(--orange-deep)}
     .nav-links a:hover::after{transform:scaleX(1)}
     .nav-cta{padding:10px 22px;font-size:.86rem}
-    .menu-toggle{display:none;font-size:1.55rem;cursor:pointer;color:var(--ink);background:none;border:none;padding:4px 8px;position:relative;z-index:1250}
-    .nav-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:opacity .28s,visibility 0s .28s;z-index:1150}
-    .nav-backdrop.show{opacity:1;visibility:visible;transition:opacity .28s}
+    .menu-toggle{display:none;font-size:1.6rem;cursor:pointer;color:var(--ink);background:none;border:none;padding:6px 10px;position:relative;z-index:1250}
 
-    /* ========== HERO (pro background image + overlay) ========== */
+    @media (max-width:992px){
+      .nav-links{display:none!important}
+      .nav-cta{display:none!important}
+      .menu-toggle{display:block!important}
+    }
+    body.is-mobile .nav-links{display:none!important}
+    body.is-mobile .nav-cta{display:none!important}
+    body.is-mobile .menu-toggle{display:block!important}
+    body:not(.is-mobile) #mobileMenu,
+    body:not(.is-mobile) #mobileOverlay{display:none!important}
+
+    .m-link{font-weight:600;font-size:1.05rem;color:var(--ink);border-bottom:1px solid #f4efe4;transition:color .2s,padding-left .2s}
+    .m-link:hover{color:var(--orange);padding-left:8px}
+    .m-close{background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--ink);line-height:1;padding:6px}
+
     .hero{position:relative;color:#fff;padding:88px 0 140px;overflow:hidden;
       background-color:#171310;
       background-image:
@@ -157,7 +160,6 @@
     .stat b{display:block;font-family:var(--head);font-size:1.9rem;font-weight:800;color:var(--gold);line-height:1}
     .stat span{font-size:.8rem;color:var(--muted-light);display:block;margin-top:4px}
 
-    /* hero dashboard card (lightweight, no 3D) */
     .hero-visual{position:relative}
     .dashboard-card{background:linear-gradient(155deg,#fff,#faf5e8);border-radius:24px;padding:28px 24px;box-shadow:0 24px 60px rgba(0,0,0,.4);transform:rotate(1.5deg);transition:transform .4s var(--ease)}
     .dashboard-card:hover{transform:rotate(0)}
@@ -171,19 +173,17 @@
     .dash-metric .trend{color:#27ae60;font-weight:700;font-size:.8rem}
     .dash-bars{display:flex;gap:7px;align-items:flex-end;height:76px;margin-top:14px;padding:10px 14px;background:#fff;border-radius:12px}
     .dash-bar{flex:1;background:linear-gradient(180deg,var(--orange),var(--gold));border-radius:4px 4px 0 0;transform:scaleY(0);transform-origin:bottom;transition:transform .8s var(--ease)}
-    body.intro-done .dash-bar,.no-intro .dash-bar{transform:scaleY(1)}
+    body.intro-done .dash-bar{transform:scaleY(1)}
     .chip{position:absolute;display:flex;align-items:center;gap:9px;background:rgba(23,19,16,.9);border:1px solid rgba(255,255,255,.18);color:#fff;padding:11px 16px;border-radius:14px;font-size:.82rem;font-weight:600;box-shadow:0 10px 24px rgba(0,0,0,.3);animation:float 6s ease-in-out infinite;white-space:nowrap}
     .chip i{color:var(--gold)}
     .chip-1{top:-20px;left:0}
     .chip-2{bottom:-18px;right:0;animation-delay:-3s}
     @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
-    /* hero entrance */
     .hero [data-anim]{opacity:0;transform:translateY(26px)}
-    body.intro-done .hero [data-anim],.no-intro .hero [data-anim]{animation:fadeUp .7s var(--ease) forwards;animation-delay:var(--d,0s)}
+    body.intro-done .hero [data-anim]{animation:fadeUp .7s var(--ease) forwards;animation-delay:var(--d,0s)}
     @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 
-    /* ========== FEATURES OVERLAP ========== */
     .features{margin-top:-72px;position:relative;z-index:6}
     .features-card{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 50px rgba(20,12,4,.12);display:grid;grid-template-columns:repeat(4,1fr);padding:30px 10px}
     .feature{display:flex;gap:14px;align-items:flex-start;padding:4px 20px;border-right:1px solid var(--line)}
@@ -193,14 +193,12 @@
     .feature h3{font-size:.98rem;margin-bottom:3px}
     .feature p{font-size:.84rem;color:var(--muted)}
 
-    /* ========== SECTIONS ========== */
     section{padding:90px 0}
     .section-head{text-align:center;margin-bottom:52px}
     .eyebrow{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange);padding:6px 16px;border-radius:50px;background:rgba(254,123,3,.08);border:1px solid rgba(254,123,3,.2)}
     .title{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:800;margin:14px 0 12px;letter-spacing:-.4px}
     .sub{color:var(--muted);max-width:660px;margin:0 auto;font-size:1rem}
 
-    /* ========== SERVICES ========== */
     .services{background:var(--cream)}
     .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
     .service-card{position:relative;background:#fff;padding:30px 24px;border-radius:20px;border:1px solid var(--line);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
@@ -214,16 +212,16 @@
     .service-card p{font-size:.87rem;color:var(--muted)}
     .services-cta{text-align:center;margin-top:44px}
 
-    /* ========== VIDEO (click-to-load = fast) ========== */
-    .video-wrap{max-width:920px;margin:0 auto;border-radius:24px;overflow:hidden;border:6px solid #fff;box-shadow:0 24px 60px rgba(20,12,4,.18);aspect-ratio:16/9;position:relative;background:linear-gradient(135deg,#241a10,#3a2410 60%,#4a2c0e)}
+    .video-wrap{max-width:920px;margin:0 auto;border-radius:24px;overflow:hidden;border:6px solid #fff;box-shadow:0 24px 60px rgba(20,12,4,.18);aspect-ratio:16/9;position:relative;background:#000}
     .video-wrap iframe{width:100%;height:100%;border:0;display:block;position:absolute;inset:0}
-    .video-facade{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:transparent;border:none;width:100%;cursor:pointer;color:#fff;font-family:var(--body)}
-    .video-facade .play{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--orange));color:#221500;font-size:1.7rem;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(254,123,3,.45);transition:transform .25s var(--ease)}
-    .video-facade:hover .play{transform:scale(1.1)}
-    .video-facade p{font-weight:600;font-size:.95rem;opacity:.9}
-    .video-facade small{opacity:.6;font-size:.78rem}
+    .video-facade{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border:none;width:100%;cursor:pointer;color:#fff;font-family:var(--body);background-size:cover;background-position:center}
+    .video-facade::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.55))}
+    .video-facade > *{position:relative}
+    .video-facade .play{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--orange));color:#221500;font-size:1.6rem;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(254,123,3,.5);transition:transform .25s var(--ease)}
+    .video-facade:hover .play{transform:scale(1.12)}
+    .video-facade p{font-weight:700;font-size:1rem;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+    .video-facade small{opacity:.75;font-size:.78rem}
 
-    /* ========== ABOUT ========== */
     .about{background:linear-gradient(180deg,#fff,#fdf9ed)}
     .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
     .about-card{background:linear-gradient(160deg,#fff8ea,#fff);border:1px solid var(--line);border-radius:26px;padding:42px 34px;box-shadow:0 20px 50px rgba(20,12,4,.1)}
@@ -242,7 +240,6 @@
     .checklist i{color:var(--orange);flex:none}
     .about blockquote{margin-top:22px;padding:20px 24px;background:#fff8ea;border-left:5px solid var(--orange);border-radius:0 14px 14px 0;font-style:italic;font-size:1.05rem}
 
-    /* ========== CTA ========== */
     .cta{padding:0 0 90px}
     .cta-inner{position:relative;overflow:hidden;background:linear-gradient(135deg,#ff9a3e,var(--orange) 55%,var(--orange-deep));border-radius:28px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;box-shadow:0 24px 50px rgba(254,123,3,.28)}
     .cta-inner::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.12);top:-130px;right:-70px}
@@ -250,7 +247,6 @@
     .cta-inner p{color:rgba(255,255,255,.92);max-width:520px}
     .cta-actions{position:relative;z-index:2;display:flex;flex-direction:column;gap:12px;flex:none}
 
-    /* ========== CONTACT ========== */
     .contact{background:var(--cream)}
     .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
     .contact-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 22px;text-align:center;transition:transform .28s var(--ease),box-shadow .28s var(--ease)}
@@ -260,12 +256,10 @@
     .contact-card p{font-size:.88rem;color:var(--muted)}
     .contact-card a{color:var(--orange-deep);font-weight:600}
 
-    /* ========== MAP ========== */
     .map-actions{display:flex;justify-content:center;gap:14px;margin-bottom:30px;flex-wrap:wrap}
     .map-wrapper{border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(20,12,4,.1)}
     .map-wrapper iframe{display:block;width:100%;height:420px;border:0}
 
-    /* ========== FOOTER ========== */
     footer{background:var(--darker);color:#cfc9c2;padding-top:64px}
     .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;padding-bottom:46px}
     .f-logo{display:inline-block;background:#fff;border-radius:12px;padding:9px 14px;margin-bottom:18px}
@@ -288,7 +282,6 @@
     .author-badge strong{background:linear-gradient(90deg,var(--gold),var(--orange));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:1px}
     .author-badge:hover{border-color:var(--gold);transform:translateY(-2px)}
 
-    /* ========== FLOATING / TOTOP ========== */
     .floating-contact-container{position:fixed;left:16px;bottom:16px;z-index:999;display:flex;flex-direction:column;align-items:flex-end}
     .contact-buttons{display:flex;flex-direction:column;gap:10px}
     .contact-button{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,.2);transition:transform .22s var(--ease)}
@@ -300,7 +293,6 @@
     #toTop{position:fixed;right:16px;bottom:16px;width:46px;height:46px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--gold),var(--orange));color:#221500;font-size:1rem;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:.3s var(--ease);z-index:998}
     #toTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 
-    /* ========== INTRO ========== */
     #proIntro{position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:99999;transition:opacity .4s,visibility .4s}
     #proIntro.hidden{opacity:0;visibility:hidden;pointer-events:none}
     .intro-content{text-align:center;padding:32px}
@@ -314,7 +306,6 @@
     .intro-credit img{width:20px;height:20px;border-radius:50%;object-fit:contain}
     .intro-credit strong{color:var(--ink);letter-spacing:1px}
 
-    /* ========== REVEAL ========== */
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
     .reveal.visible{opacity:1;transform:translateY(0)}
     .services-grid .service-card:nth-child(2){transition-delay:.05s}
@@ -327,7 +318,6 @@
     .services-grid .service-card:nth-child(9){transition-delay:.4s}
     .services-grid .service-card:nth-child(10){transition-delay:.45s}
 
-    /* ========== RESPONSIVE ========== */
     @media (max-width:1080px){
       .hero .container{grid-template-columns:1fr;gap:70px;text-align:center}
       .hero-slogan{margin-left:auto;margin-right:auto}
@@ -339,14 +329,6 @@
       .about-text .title{text-align:center}
       .contact-grid{grid-template-columns:repeat(2,1fr)}
       .footer-grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media (max-width:992px){
-      .nav-cta{display:none}
-      .menu-toggle{display:block}
-      .nav-links{position:fixed;top:0;right:0;bottom:0;height:100%;width:min(80%,320px);background:#fff;flex-direction:column;align-items:stretch;gap:2px;padding:88px 26px 26px;transform:translateX(105%);visibility:hidden;transition:transform .32s var(--ease),visibility 0s .32s;z-index:1200;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;box-shadow:-12px 0 34px rgba(0,0,0,.14)}
-      .nav-links.open{transform:translateX(0);visibility:visible;transition:transform .32s var(--ease)}
-      .nav-links a{font-size:1.05rem;padding:13px 4px;border-bottom:1px solid #f4efe4}
-      .nav-links a::after{display:none}
     }
     @media (max-width:700px){
       .social-links{display:none}
@@ -373,7 +355,6 @@
       .chip{font-size:.74rem;padding:9px 12px}
     }
 
-    /* ========== REDUCED MOTION / NO-JS ========== */
     @media (prefers-reduced-motion:reduce){
       *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
       html{scroll-behavior:auto}
@@ -390,12 +371,10 @@
   </noscript>
 </head>
 <body class="intro-active">
-<!-- safety net: guarantees mobile scaling even if a platform strips <head> -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== INTRO ===== -->
 <div id="proIntro" role="status" aria-label="Loading Sundar Sewa">
   <div class="intro-content">
     <img src="https://raw.githubusercontent.com/sushantjha143/Sundar-Sewa/main/images/SundarSewaWEBLOGO.png" alt="Sundar Sewa Pvt. Ltd. logo" class="intro-logo" fetchpriority="high">
@@ -409,7 +388,6 @@
   </a>
 </div>
 
-<!-- ===== TOP BAR (compact, no location) ===== -->
 <div class="top-header">
   <div class="container">
     <div class="header-contact">
@@ -425,14 +403,13 @@
   </div>
 </div>
 
-<!-- ===== HEADER ===== -->
 <header id="siteHeader">
   <div class="container">
     <a href="https://www.sundarsewa.com.np" class="logo" aria-label="Sundar Sewa — Home">
       <img src="https://raw.githubusercontent.com/sushantjha143/Sundar-Sewa/main/images/SundarSewaWEBLOGO.png" alt="Sundar Sewa Pvt. Ltd. logo" width="240" height="82" fetchpriority="high">
     </a>
     <nav aria-label="Primary">
-      <ul class="nav-links" id="navMenu">
+      <ul class="nav-links">
         <li><a href="https://www.sundarsewa.com.np">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="careers.html">Careers</a></li>
@@ -441,33 +418,31 @@
         <li><a href="about.html">About Us</a></li>
       </ul>
       <a href="ssform.html" class="btn btn-primary nav-cta">Get Services</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </nav>
   </div>
 </header>
-<div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- isolated menu script: works even if anything else fails -->
-<script>
-(function(){
-  var t=document.getElementById('menuToggle'),m=document.getElementById('navMenu'),b=document.getElementById('navBackdrop'),i=t.querySelector('i');
-  function set(o){
-    m.classList.toggle('open',o);
-    b.classList.toggle('show',o);
-    i.className=o?'fas fa-times':'fas fa-bars';
-    t.setAttribute('aria-expanded',o);
-    document.body.classList.toggle('menu-locked',o);
-  }
-  t.addEventListener('click',function(e){e.stopPropagation();set(!m.classList.contains('open'));});
-  b.addEventListener('click',function(){set(false);});
-  m.addEventListener('click',function(e){if(e.target.tagName==='A')set(false);});
-  window.addEventListener('resize',function(){if(window.innerWidth>992)set(false);});
-})();
-</script>
+<div id="mobileOverlay" style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:1190;display:none;"></div>
+
+<div id="mobileMenu" style="position:fixed;top:0;right:0;bottom:0;height:100%;width:80%;max-width:320px;background:#ffffff;z-index:1200;transform:translateX(105%);transition:transform .3s ease;overflow-y:auto;display:flex;flex-direction:column;box-shadow:-10px 0 30px rgba(0,0,0,.15);">
+  <div style="padding:18px 24px;border-bottom:1px solid #f0e6d2;display:flex;align-items:center;justify-content:space-between;">
+    <span style="font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem;color:#1c1400;">Menu</span>
+    <button class="m-close" id="mobileClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  </div>
+  <nav style="display:flex;flex-direction:column;padding:12px 24px 24px;" aria-label="Mobile">
+    <a class="m-link" href="https://www.sundarsewa.com.np" style="display:block;padding:14px 0;">Home</a>
+    <a class="m-link" href="services.html" style="display:block;padding:14px 0;">Services</a>
+    <a class="m-link" href="careers.html" style="display:block;padding:14px 0;">Careers</a>
+    <a class="m-link" href="team-members.html" style="display:block;padding:14px 0;">Team Members</a>
+    <a class="m-link" href="contact.html" style="display:block;padding:14px 0;">Contact</a>
+    <a class="m-link" href="about.html" style="display:block;padding:14px 0;">About Us</a>
+    <a href="ssform.html" class="btn btn-primary" style="margin-top:18px;justify-content:center;">Get Services</a>
+  </nav>
+</div>
 
 <main id="main">
 
-  <!-- ===== HERO ===== -->
   <section id="home" class="hero" aria-labelledby="heroTitle">
     <div class="container">
       <div>
@@ -498,7 +473,6 @@
     </div>
   </section>
 
-  <!-- ===== FEATURES ===== -->
   <div class="features">
     <div class="container">
       <div class="features-card reveal">
@@ -510,7 +484,6 @@
     </div>
   </div>
 
-  <!-- ===== SERVICES ===== -->
   <section id="services" class="services" aria-labelledby="servicesTitle">
     <div class="container">
       <div class="section-head reveal">
@@ -534,25 +507,23 @@
     </div>
   </section>
 
-  <!-- ===== VIDEO (click to load) ===== -->
-  <section class="video-section" aria-labelledby="videoTitle" style="padding-top:70px">
+  <section aria-labelledby="videoTitle" style="padding-top:70px">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Watch &amp; Learn</span>
         <h2 class="title" id="videoTitle">Discover Sundar Sewa in Action</h2>
         <p class="sub">A quick video to know our work, process and commitment.</p>
       </div>
-      <div class="video-wrap reveal" id="videoBox" data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1EveR74nHN%2F&show_text=false">
-        <button class="video-facade" id="videoBtn" aria-label="Play video">
+      <div class="video-wrap reveal" id="videoBox" data-embed="https://www.youtube-nocookie.com/embed/uCSDP7n0V1E?autoplay=1&rel=0">
+        <button class="video-facade" id="videoBtn" aria-label="Play video" style="background-image:url('https://i.ytimg.com/vi/uCSDP7n0V1E/hqdefault.jpg')">
           <span class="play"><i class="fas fa-play" style="margin-left:4px"></i></span>
-          <p>Watch Our Video on Facebook</p>
-          <small>Tap to load &amp; play</small>
+          <p>Watch Our Official Video</p>
+          <small>Tap to play</small>
         </button>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
   <section id="about" class="about" aria-labelledby="aboutTitle">
     <div class="container">
       <div class="about-grid">
@@ -594,7 +565,6 @@
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
   <section class="cta" aria-label="Get started">
     <div class="container">
       <div class="cta-inner reveal">
@@ -610,7 +580,6 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
   <section id="contact" class="contact" aria-labelledby="contactTitle">
     <div class="container">
       <div class="section-head reveal">
@@ -627,7 +596,6 @@
     </div>
   </section>
 
-  <!-- ===== MAP ===== -->
   <section class="map-section" aria-labelledby="mapTitle">
     <div class="container">
       <div class="section-head reveal">
@@ -647,7 +615,6 @@
 
 </main>
 
-<!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -703,7 +670,6 @@
   </div>
 </footer>
 
-<!-- ===== FLOATING CONTACT ===== -->
 <div class="floating-contact-container" id="floatingContact">
   <div class="contact-buttons">
     <a href="https://wa.me/9779851126502" class="contact-button whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
@@ -724,7 +690,43 @@
 (function(){
   'use strict';
 
-  /* INTRO */
+  var mm = document.getElementById('mobileMenu');
+  var ov = document.getElementById('mobileOverlay');
+  var tg = document.getElementById('menuToggle');
+  var cl = document.getElementById('mobileClose');
+  var tIcon = tg.querySelector('i');
+
+  function mmOpen(){
+    mm.style.transform = 'translateX(0)';
+    ov.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    tIcon.className = 'fas fa-times';
+    tg.setAttribute('aria-expanded','true');
+  }
+  function mmClose(){
+    mm.style.transform = 'translateX(105%)';
+    ov.style.display = 'none';
+    document.body.style.overflow = '';
+    tIcon.className = 'fas fa-bars';
+    tg.setAttribute('aria-expanded','false');
+  }
+  tg.addEventListener('click', function(e){
+    e.stopPropagation();
+    (mm.style.transform === 'translateX(0)') ? mmClose() : mmOpen();
+  });
+  cl.addEventListener('click', mmClose);
+  ov.addEventListener('click', mmClose);
+  var mLinks = mm.querySelectorAll('a');
+  for(var i=0;i<mLinks.length;i++){ mLinks[i].addEventListener('click', mmClose); }
+
+  function mqCheck(){
+    var isMob = window.innerWidth <= 992;
+    document.body.classList.toggle('is-mobile', isMob);
+    if(!isMob) mmClose();
+  }
+  window.addEventListener('resize', mqCheck);
+  mqCheck();
+
   var intro = document.getElementById('proIntro');
   setTimeout(function(){
     if(!intro) return;
@@ -734,7 +736,6 @@
     setTimeout(function(){ if(intro.parentNode) intro.parentNode.removeChild(intro); }, 450);
   }, 2000);
 
-  /* DASHBOARD BARS */
   var bars = document.getElementById('dashBars');
   if(bars){
     [45,70,55,90,40,80,65,100,50,75].forEach(function(h,i){
@@ -746,7 +747,6 @@
     });
   }
 
-  /* COUNT-UP */
   function countUp(el){
     var target = parseInt(el.getAttribute('data-count'),10);
     if(isNaN(target)) return;
@@ -759,7 +759,6 @@
     })();
   }
 
-  /* REVEAL + COUNTERS */
   var reveals = document.querySelectorAll('.reveal');
   var counters = document.querySelectorAll('[data-count]');
   if('IntersectionObserver' in window){
@@ -776,7 +775,6 @@
     counters.forEach(countUp);
   }
 
-  /* HEADER + TOTOP (passive = smooth) */
   var header = document.getElementById('siteHeader'), toTop = document.getElementById('toTop');
   function onScroll(){
     header.classList.toggle('scrolled', window.scrollY > 10);
@@ -786,22 +784,20 @@
   onScroll();
   toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
 
-  /* VIDEO: click-to-load (keeps page fast) */
   var vBtn = document.getElementById('videoBtn');
   if(vBtn){
     vBtn.addEventListener('click', function(){
       var box = document.getElementById('videoBox');
       var f = document.createElement('iframe');
-      f.src = box.getAttribute('data-src');
+      f.src = box.getAttribute('data-embed');
       f.allow = 'autoplay; encrypted-media; picture-in-picture';
       f.allowFullscreen = true;
-      f.title = 'Sundar Sewa Facebook Video';
+      f.title = 'Sundar Sewa Official Video';
       box.innerHTML = '';
       box.appendChild(f);
     });
   }
 
-  /* DRAGGABLE FLOATING CONTACT */
   var fc = document.getElementById('floatingContact'), handle = fc.querySelector('.drag-handle');
   var dragging = false, offX = 0, offY = 0;
   try{
@@ -833,7 +829,6 @@
   document.addEventListener('touchmove', dMove, {passive:false});
   document.addEventListener('touchend', dEnd);
 
-  /* YEAR */
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
 </script>
