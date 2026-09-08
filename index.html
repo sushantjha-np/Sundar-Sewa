@@ -373,9 +373,89 @@
       .dash-bar{transform:scaleY(1)}
     </style>
   </noscript>
-<meta name="google-site-verification" content="AKu-7zalEjhsGJHG8OzmRC05aim1IcVhCRowzjb8ssw" />
+  <meta name="google-site-verification" content="AKu-7zalEjhsGJHG8OzmRC05aim1IcVhCRowzjb8ssw" />
+
+  <!-- VACANCY POPUP STYLES -->
+  <style>
+    .vacancy-popup-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100001;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .vacancy-popup-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .vacancy-popup-content {
+      position: relative;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 90vw;
+      max-height: 90vh;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+      animation: vacancyPopupIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    @keyframes vacancyPopupIn {
+      from { transform: scale(0.9) translateY(20px); opacity: 0; }
+      to { transform: scale(1) translateY(0); opacity: 1; }
+    }
+    .vacancy-popup-close {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #ff3b30;
+      color: #ffffff;
+      border: 3px solid #ffffff;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease, background 0.2s ease;
+      z-index: 2;
+    }
+    .vacancy-popup-close:hover {
+      transform: scale(1.1);
+      background: #d63026;
+    }
+    .vacancy-popup-image {
+      display: block;
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    @media (max-width: 640px) {
+      .vacancy-popup-content {
+        padding: 12px;
+        max-width: 95vw;
+      }
+      .vacancy-popup-close {
+        top: -12px;
+        right: -12px;
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
-  <body class="intro-active">
+<body class="intro-active">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <a class="skip-link" href="#main">Skip to content</a>
@@ -417,7 +497,7 @@
       <ul class="nav-links">
         <li><a href="https://www.sundarsewa.com.np">Home</a></li>
         <li><a href="services.html">Services</a></li>
-         <li><a href="https://blogs.sundarsewa.com.np/">Blogs</a></li>
+        <li><a href="https://blogs.sundarsewa.com.np/">Blogs</a></li>
         <li><a href="https://apply.sundarsewa.com.np/">Careers</a></li>
         <li><a href="team-members.html">Team Members</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -439,8 +519,8 @@
   <nav style="display:flex;flex-direction:column;padding:12px 24px 24px;" aria-label="Mobile">
     <a class="m-link" href="https://www.sundarsewa.com.np" style="display:block;padding:14px 0;">Home</a>
     <a class="m-link" href="services.html" style="display:block;padding:14px 0;">Services</a>
-        <a  href="https://blogs.sundarsewa.com.np/" style="display:block;padding:14px 0;"> Blogs</a>
-    <a  href="https://apply.sundarsewa.com.np/" style="display:block;padding:14px 0;">Careers</a>
+    <a href="https://blogs.sundarsewa.com.np/" style="display:block;padding:14px 0;">Blogs</a>
+    <a href="https://apply.sundarsewa.com.np/" style="display:block;padding:14px 0;">Careers</a>
     <a class="m-link" href="team-members.html" style="display:block;padding:14px 0;">Team Members</a>
     <a class="m-link" href="contact.html" style="display:block;padding:14px 0;">Contact</a>
     <a class="m-link" href="about.html" style="display:block;padding:14px 0;">About Us</a>
@@ -842,5 +922,54 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
 </script>
+
+<!-- VACANCY POPUP HTML & SCRIPT -->
+<div id="vacancyPopup" class="vacancy-popup-overlay">
+  <div class="vacancy-popup-content">
+    <button class="vacancy-popup-close" id="vacancyPopupClose" aria-label="Close vacancy popup">&times;</button>
+    <img src="https://raw.githubusercontent.com/sushantjha-np/Sundar-Sewa/refs/heads/main/images/sundarsewa_vacancy.jpg" alt="Sundar Sewa Vacancy Announcement" class="vacancy-popup-image" loading="lazy">
+  </div>
+</div>
+
+<script>
+  (function() {
+    var popup = document.getElementById('vacancyPopup');
+    var closeBtn = document.getElementById('vacancyPopupClose');
+    var popupTimer;
+
+    function showPopup() {
+      if (!popup) return;
+      popup.classList.add('active');
+      popupTimer = setTimeout(function() {
+        hidePopup();
+      }, 5000);
+    }
+
+    function hidePopup() {
+      if (!popup) return;
+      popup.classList.remove('active');
+      if (popupTimer) {
+        clearTimeout(popupTimer);
+        popupTimer = null;
+      }
+      setTimeout(function() {
+        if (popup && popup.parentNode) {
+          popup.parentNode.removeChild(popup);
+        }
+      }, 350);
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        hidePopup();
+      });
+    }
+
+    // Show popup shortly after the initial intro animation (which takes 2000ms)
+    setTimeout(showPopup, 2200);
+  })();
+</script>
+
 </body>
 </html>
